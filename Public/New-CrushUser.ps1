@@ -553,7 +553,7 @@ Param(
     }
 
     ## Admin
-    if(![string]::IsNullOrEmpty($AdminSitePermissions)) { $UserSettingsParameters += "$AdminSitePermissions" } 
+    if(![string]::IsNullOrEmpty($AdminSitePermissions)) { $UserSettingsParameters += "<site>$AdminSitePermissions</site>" } 
     if(![string]::IsNullOrEmpty($AdminGroupName)) { $UserSettingsParameters += "<admin_group_name>$AdminGroupName</admin_group_name>" }
     if(![string]::IsNullOrEmpty($PasswordUnsafeChars)) { $UserSettingsParameters += "<unsafe_password_chars>$PasswordUnsafeChars</unsafe_password_chars>" }
     if(![string]::IsNullOrEmpty($PasswordRandomLength)) { $UserSettingsParameters += "<random_password_length>$($PasswordRandomLength.ToString())</random_password_length>" }
