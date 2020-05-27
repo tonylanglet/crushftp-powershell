@@ -1,5 +1,5 @@
-# CrushFTP v.8 with Powershell
-User management for CrushFTP v.8, there is no documented API for CrushFTP but this module is created out of the REST XML calls done in the background and was fetched through a networking tool.
+# CrushFTP with Powershell
+User management for CrushFTP, there is no documented API for CrushFTP but this module is created out of the REST XML calls done in the background and was fetched through a networking tool.
 
 **_The work has been done on a v.8 license and I'm aware there are changes to the API functionality in v.9 but feel free to try it out_**
 
