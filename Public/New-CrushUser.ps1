@@ -590,7 +590,7 @@ Param(
             foreach($item in $VFSItems) {
                 if($item -match $regexVFSItems) {
                     $item = $item -replace '<\/vfs_items>$', '' # Regex TrimEnd
-                    $item = $item -replace '^<\?xml version="1\.0" encoding="UTF-8"\?><vfs_items type="properties">i?', '' # Regex TrimStart
+                    $item = $item -replace '^<\?xml version="1\.0" encoding="UTF-8"\?><vfs_items type="vector">i?', '' # Regex TrimStart
                     $MultipleVFSItems += $item
                 } else {
                     $MultipleVFSItems += $item
