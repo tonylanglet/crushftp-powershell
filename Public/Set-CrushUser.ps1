@@ -625,7 +625,7 @@ Param(
             foreach($item in $Permissions) {
                 if($item -match $regexPermissions) {
                     $item = $item -replace '<\/VFS>$', '' # TrimEnd
-                    $item = $item -replace '^<\?xml version="1\.0" encoding="UTF-8"\?><permissions type="properties">i?', '' #TrimStart
+                    $item = $item -replace '^<\?xml version="1\.0" encoding="UTF-8"\?><permissions type="vector">i?', '' #TrimStart
                     $MultiplePermissions += $item
                 } else {
                     $MultiplePermissions += $item
